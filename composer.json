@@ -1,0 +1,8 @@
+{
+    "name": "marlon-be/icepay-api",
+    "autoload": {
+        "psr-0": {
+            "Icepay_": "src/"
+        }
+    }
+}
