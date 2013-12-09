@@ -185,7 +185,6 @@ class Icepay_Basicmode extends Icepay_Api_Base {
 
         /* @since version 1.0.2 */
         if ($this->_webservice) {
-            require_once(DIR . DS . "icepay_api_webservice.php");
 
             if (!isset($this->data->ic_issuer) || $this->data->ic_issuer == "")
                 throw new Exception("Issuer not set");

@@ -53,7 +53,7 @@ class Icepay_Api_Basic extends Icepay_Api_Base {
      * @param string $dir Folder of the paymentmethod classes
      */
     public function readFolder($dir = null) {
-        $this->setPaymentMethodsFolder(DIR . DS . 'paymentmethods');
+        $this->setPaymentMethodsFolder(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Paymentmethods');
 
         if ($dir)
             $this->setPaymentMethodsFolder($dir);
