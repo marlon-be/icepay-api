@@ -1,4 +1,6 @@
-ICEPAY API 2
-============
+ICEPAY API
+==========
 
-mirror for ICEPAY API 2
+Mirror for ICEPAY API
+
+*Current version 2.0*
