@@ -78,9 +78,9 @@ class Icepay_Basicmode extends Icepay_Api_Base {
      * Required for using the basicmode
      * @since version 2.1.0
      * @access public
-     * @param Icepay_PaymentObject_Interface_Abstract $payment
+     * @param Icepay_PaymentObjectInterface $payment
      */
-    public function validatePayment(Icepay_PaymentObject_Interface_Abstract $payment) {
+    public function validatePayment(Icepay_PaymentObjectInterface $payment) {
         /* Clear the generated URL */
         $this->resetURL();
 

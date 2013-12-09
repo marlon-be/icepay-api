@@ -30,7 +30,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         return false;
     }
 
-    public function extendedCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj, $getUrlOnly = false)
+    public function extendedCheckout(Icepay_PaymentObjectInterface $paymentObj, $getUrlOnly = false)
     {
         $obj = new stdClass();
 
@@ -96,7 +96,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         return true;
     }
 
-    public function autoCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj, $consumerID)
+    public function autoCheckout(Icepay_PaymentObjectInterface $paymentObj, $consumerID)
     {
         $obj = new StdClass();
 
@@ -146,7 +146,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
         return $result->AutomaticCheckoutResult;
     }
 
-    public function vaultCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj, $consumerID, $getUrlOnly = false)
+    public function vaultCheckout(Icepay_PaymentObjectInterface $paymentObj, $consumerID, $getUrlOnly = false)
     {
         $obj = new StdClass();
 
@@ -204,11 +204,11 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
      *
      * @since version 2.1.0
      * @access public
-     * @param Icepay_PaymentObject_Interface_Abstract $paymentObj
+     * @param Icepay_PaymentObjectInterface $paymentObj
      * @param bool $geturlOnly
      * @return array result
      */
-    public function checkOut(Icepay_PaymentObject_Interface_Abstract $paymentObj, $getUrlOnly = false)
+    public function checkOut(Icepay_PaymentObjectInterface $paymentObj, $getUrlOnly = false)
     {
         $obj = new stdClass();
 
@@ -270,7 +270,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
      * @param bool $geturlOnly
      * @return array result
      */
-    public function phoneCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj, $getUrlOnly = false)
+    public function phoneCheckout(Icepay_PaymentObjectInterface $paymentObj, $getUrlOnly = false)
     {
         $obj = new StdClass();
 
@@ -326,7 +326,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
      * @param bool $geturlOnly
      * @return array
      */
-    public function smsCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj, $getUrlOnly = false)
+    public function smsCheckout(Icepay_PaymentObjectInterface $paymentObj, $getUrlOnly = false)
     {
         $obj = new StdClass();
 
@@ -465,7 +465,7 @@ class Icepay_Webservice_Pay extends Icepay_Webservice_Base {
      * @param object $data
      * @return array result
      */
-    public function phoneDirectCheckout(Icepay_PaymentObject_Interface_Abstract $paymentObj)
+    public function phoneDirectCheckout(Icepay_PaymentObjectInterface $paymentObj)
     {
         $obj = new StdClass();
 
