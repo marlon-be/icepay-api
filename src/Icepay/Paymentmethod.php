@@ -6,7 +6,7 @@
  *  @author Olaf Abbenhuis
  *  @since 2.1.0
  */
-class Icepay_Paymentmethod implements Icepay_Basic_PaymentmethodInterface {
+class Icepay_Paymentmethod implements Icepay_PaymentmethodInterface {
 
     public $_version = null;
     public $_method = null;

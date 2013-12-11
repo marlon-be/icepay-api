@@ -10,7 +10,7 @@
  *
  */
 
-interface Icepay_Basic_PaymentmethodInterface {
+interface Icepay_PaymentmethodInterface {
 
     public function getCode();
 

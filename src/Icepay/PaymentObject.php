@@ -78,7 +78,7 @@ class Icepay_PaymentObject implements Icepay_PaymentObjectInterface {
      * Get all data as an object
      * @since version 2.1.0
      * @access public
-     * @return Icepay_Basic_PaymentmethodInterface
+     * @return Icepay_PaymentmethodInterface
      */
     public function getBasicPaymentmethodClass()
     {
